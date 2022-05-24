@@ -1,0 +1,96 @@
+:root{
+  --main-color: #262626;
+  --background-color: #0e0e0e;
+  --hover-color: #ecea1c;
+  --text-color: #fffffa;
+}
+body{
+  box-sizing: border-box;
+  margin: 0;
+  background-color: var(--main-color);
+  color: var(--text-color);
+  font-size: 18px;
+  font-family: 'Comic Neue', cursive;
+}
+.header{
+  padding: 1.1em 0;
+  height: 15vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  align-content: start;
+}
+.logo{
+    margin-left: 1.2em;
+    font-size: 1.6em;
+    font-family: inherit;
+}
+.nav-menu{
+  margin: auto;
+}
+.nav-menu_item{
+  padding: 1em;
+  display: inline-block;
+  list-style: none;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.button{
+  margin-right: 1.6em;
+  padding: 0.8em 1.5em;
+  border: 0.1em solid var(--text-color);
+  border-radius: 0.27em;
+  background-color:transparent;
+  color: inherit;
+  font-size: 0.7em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+}
+
+
+
+/* Дальше стили для секции с картинкой */
+section{
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  background-image: url(./../image/restaurant.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+}
+.text{
+  width: 9.7em;
+  padding: 0.41em 0.55em;
+  position: absolute;
+  left: 4em;
+  top: 3.6em;
+  z-index: 2;
+  background-color:var(--hover-color);
+  box-shadow: 0.17em 0.22em 0.17em rgba(77,77,77,0.64);
+  color: black;
+  font-family: 'Skranji', cursive;
+  font-size: 2em;
+  text-align: center;
+}
+.text:first-child{
+  width: 8.2em;
+  top: 0.79em;
+  left: 0.99em;
+  z-index: 3;
+  background-color:var(--text-color);
+  font-family: inherit;
+  font-size: 2.8em;
+}
+.text:last-child{
+  width: 8.7em;
+  top: 4em;
+  left: 0.78em;
+  z-index: 1;
+  background-color:var(--text-color);
+  font-size: 2.5em;
+  transform: rotate(-3deg);
+  font-family: inherit;
+}
